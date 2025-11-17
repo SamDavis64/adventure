@@ -255,7 +255,7 @@ def process_command(command, player, game_map):
 
 
 # ----- Main Game -----
-def main():
+def fetch_quest():
 
     difficulty = int(input("Enter difficulty level (1–100): "))
     game_map, player = initialise_game(difficulty)
@@ -272,4 +272,4 @@ def main():
         print(f"\nCongratulations! You collected all items and returned to {game_map.starting_location.name}. Your quest is complete!")
 
 if __name__ == "__main__":
-    main()
+    fetch_quest()
